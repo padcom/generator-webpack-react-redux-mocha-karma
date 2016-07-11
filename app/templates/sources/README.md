@@ -1,13 +1,3 @@
-[![Build status](https://api.travis-ci.org/padcom/react-example-02.svg)](https://travis-ci.org/padcom/react-example-02)
-
-## <%= name %> - a Webpack/React/Redux/Mocha/Karma application
-
-This example shows how to configure a full working solution using webpack, React and Redux with tests, developer setup with hot reloading and a fully working production build.
-
-### Motivation
-
-Many frameworks out in the wild have some sort of command-line utility that allows for quick and easy setup of projects and their maintenance. For example [Rails](http://rails.org), [Grails](http://www.grails.org), [Ember](http://emberjs.org) have a fully working solution like that. Unfortunately there is no such thing for React+Redux on Webpack yet. In my opinion on one end it leads to harder project setup but on the other hand allows for experimentation and tune-up that is out of reach for mere mortals when using something like ember-cli (not to mention that thing's sooo slooooow!).
-
 ### Building blocks
 
 The solution is based on Webpack. The configuration file is split into 2:

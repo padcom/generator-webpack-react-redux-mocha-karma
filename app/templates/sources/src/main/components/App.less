@@ -1,0 +1,25 @@
+
+// Those rules are available globally hence the possibility
+// to influence html and body tags
+:global {
+  html, body {
+    font-family: mono;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #2C2C2C;
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+  }
+}
+
+// All other rules are local and can only be assigned to the component
+// from the imported style.
+.component {
+  background-color: black;
+  padding: 30px;
+}

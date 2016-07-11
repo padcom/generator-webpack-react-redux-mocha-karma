@@ -1,0 +1,11 @@
+{
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "React": true,
+    "mockStore": true,
+    "mount": true,
+    "expect": true
+  }
+}

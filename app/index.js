@@ -38,6 +38,6 @@ module.exports = generators.Base.extend({
   },
 
   install: function() {
-//    this.installDependencies({ npm: true, bower: false });
+    this.npmInstall();
   }
 });

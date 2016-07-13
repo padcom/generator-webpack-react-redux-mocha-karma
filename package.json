@@ -1,11 +1,13 @@
 {
   "name": "generator-webpack-react-redux-mocha-karma",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Generator for Webpack/React/Redux/Mocha/Karma project",
   "files": [
     "app"
   ],
-  "keywords": [ "yeoman-generator" ],
+  "keywords": [ 
+    "yeoman-generator", "generator", "webpack", "react", "redux", "mocha", "karma"
+  ],
   "dependencies": {
     "yeoman-generator": "^0.23.4"
   },

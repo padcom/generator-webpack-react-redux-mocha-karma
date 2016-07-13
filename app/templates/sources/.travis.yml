@@ -2,10 +2,10 @@ language: node_js
 node_js:
   - "6"
 install:
-    - npm install
+  - npm install
 script:
-    - npm run lint
-    - npm test
-    - cat target/coverage/summary.txt
-    - cat target/coverage/details.txt
-    - npm run build
+  - npm run lint
+  - npm test
+  - cat target/coverage/summary.txt
+  - cat target/coverage/details.txt
+  - npm run build

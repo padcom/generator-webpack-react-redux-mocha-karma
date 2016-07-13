@@ -2,8 +2,8 @@
 
 Usage:
 ```
-npm install -g yeoman generator-webpack-react-redux-mocha-karma
-yo webpack-react-redux-mocha-karma [appname]
+npm install -g yo generator-webpack-react-redux-mocha-karma
+yo webpack-react-redux-mocha-karma <appname>
 ```
 
 and then
@@ -13,7 +13,7 @@ npm start
 
 ### Building blocks
 
-The solution is based on Webpack. The configuration file is split into 2:
+The solution is based on Webpack. The configuration file is split into 3:
 
   - webpack.config.js - default set of configuration options
   - webpack-test.config.js - overrides for tests

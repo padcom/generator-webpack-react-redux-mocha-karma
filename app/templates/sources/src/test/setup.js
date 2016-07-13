@@ -1,6 +1,6 @@
 'use strict';
 
-// Require all the necessary objects
+// Require all the necessary styles
 require('./setup.less');
 
 // Make React globally available
@@ -28,3 +28,8 @@ global.mockStore = configureStore();
 var context = require.context('.', true, /.+\.test\.js?$/);
 context.keys().forEach(context);
 module.exports = context;
+
+// Cleanup the display after every test
+afterEach(function() {
+  global.document.getElementById('root').innerHTML = '';
+});

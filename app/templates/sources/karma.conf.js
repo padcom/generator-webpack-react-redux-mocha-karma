@@ -1,4 +1,3 @@
-
 // Load webpack configuration and trim it down so that Karma can run
 const webpack = require('./webpack-test.config');
 webpack.entry = undefined;
@@ -6,8 +5,8 @@ webpack.output = undefined;
 webpack.module.preloaders = undefined;
 webpack.plugins = undefined;
 
-// transpile all .js files from es6 to es5 using babel but
-// with instrumentation so that coverage can be measured
+// transpile all .js files from es6 to es5 using babel but with instrumentation
+// so that coverage can be measured
 webpack.module.loaders.push({ test: /\.js$/, include: /src\/main/, loader: 'isparta' })
 // code coverage configuration using isparta; src/main is loaded using isparta
 // which uses babel to understand the syntax. Therefore babel needs not to process

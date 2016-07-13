@@ -1,17 +1,19 @@
-var generators = require('yeoman-generator');
+var generator = require('yeoman-generator');
+var _ = require('lodash');
 
-var variables = null;
+var variables = { }
 
-module.exports = generators.Base.extend({
-  prompting: function() {
-    return this.prompt([{
-      type: 'input',
-      name: 'name',
-      message: 'Project name',
-      default: this.appname
-    }]).then(function(answers) {
-      variables = answers
-    }.bind(this));
+module.exports = generator.Base.extend({
+  constructor: function () {
+    generator.Base.apply(this, arguments);
+    this.argument('appname', { type: String, required: true, desc: 'Project name' });
+  },
+
+  configuring: {
+    gatherVariables: function() {
+      variables.appname = this.appname;
+      variables.pkgname = _.kebabCase(this.appname);
+    }
   },
 
   writing: function() {
@@ -29,7 +31,7 @@ module.exports = generators.Base.extend({
       variables
     );
 
-    // Copy all dotfiles
+    // Copy all binary files (those that arent templates)
     this.fs.copy(
       this.templatePath('binaries/**/*'),
       this.destinationRoot(),

@@ -1,0 +1,9 @@
+{
+    "name": "<%= appname %> API",
+    "description": "",
+    "version": "0.0.1",
+    "options": {
+        "outdir": "./target/docs",
+        "paths": "./src/main"
+    }
+}

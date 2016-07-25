@@ -6,7 +6,9 @@
     "build": "webpack -p --progress --config webpack-production.config.js",
     "lint": "eslint 'src/**/*.js'",
     "test": "karma start --single-run --browsers PhantomJS",
-    "test:watch": "webpack-dev-server --config webpack-test.config.js --port 3001 --open --hot --inline"
+    "test:watch": "webpack-dev-server --config webpack-test.config.js --port 3001 --open --hot --inline",
+    "doc": "yuidoc -c yuidoc.json",
+    "doc:watch": "yuidoc -c yuidoc.json --server 3002"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -56,6 +58,7 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
-    "webpack-config": "^5.1.0"
+    "webpack-config": "^5.1.0",
+    "yuidocjs": "^0.10.2"
   }
 }

@@ -44,6 +44,14 @@ Executes static code analysis. Designed to be part of the CI environment. ESLint
 
 Builds a production version of the application.
 
+#### npm run doc
+
+Builds static documentation of your project
+
+#### npm run doc:watch
+
+Stats a server on port 3002 that serves the documentation. It watches for code changes and rebuilds the docs (good for when you work on your project's documentation)
+
 ### Project structure
 
 Organization of the project is very similar in many aspects to that of a Java Maven project.

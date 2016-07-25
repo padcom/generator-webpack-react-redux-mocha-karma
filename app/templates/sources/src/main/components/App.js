@@ -5,6 +5,11 @@ import Input from './Input';
 
 import css from './App.less'
 
+/**
+ * Main application component
+ *
+ * @class App
+ */
 const App = () => (
   <div class={css.component}>
     <Input />

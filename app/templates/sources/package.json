@@ -2,11 +2,11 @@
   "name": "<%= pkgname %>",
   "version": "0.0.1",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --port 3000",
+    "start": "webpack-dashboard -- webpack-dev-server --hot --inline --port 3000",
     "build": "webpack -p --progress --config webpack-production.config.js",
     "lint": "eslint 'src/**/*.js'",
     "test": "karma start --single-run --browsers PhantomJS",
-    "test:watch": "webpack-dev-server --config webpack-test.config.js --port 3001 --open --hot --inline",
+    "test:watch": "webpack-dashboard -- webpack-dev-server --config webpack-test.config.js --port 3001 --open --hot --inline",
     "doc": "yuidoc -c yuidoc.json",
     "doc:watch": "yuidoc -c yuidoc.json --server 3002"
   },
@@ -59,6 +59,7 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-config": "^5.1.0",
+    "webpack-dashboard": "^0.1.8",
     "yuidocjs": "^0.10.2"
   }
 }

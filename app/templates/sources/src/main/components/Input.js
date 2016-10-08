@@ -11,7 +11,6 @@ import css from './Input.less';
  * Input field
  *
  * @class Input
- * @
  */
 const Input = ({
   /**

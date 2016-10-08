@@ -8,7 +8,16 @@ import css from './Title.less'
  *
  * @class Title
  */
-const Title = ({ title }) => <h1 class={ css.component  }>{title}</h1>
+const Title = ({
+  /**
+   * Title to display
+   *
+   * @property title
+   */
+  title
+}) => (
+  <h1 class={ css.component  }>{title}</h1>
+)
 
 export default connect(
   state => ({ title: state.title })

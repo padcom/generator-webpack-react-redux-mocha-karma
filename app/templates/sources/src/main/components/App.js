@@ -2,6 +2,7 @@ import React from 'react';
 
 import Title from './Title';
 import Input from './Input';
+import Counter from './Counter';
 
 import css from './App.less'
 
@@ -14,6 +15,7 @@ const App = () => (
   <div class={css.component}>
     <Input />
     <Title />
+    <Counter />
   </div>
 )
 

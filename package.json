@@ -1,6 +1,6 @@
 {
   "name": "generator-webpack-react-redux-mocha-karma",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Generator for Webpack/React/Redux/Mocha/Karma project",
   "files": [
     "app"
